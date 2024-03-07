@@ -1,13 +1,12 @@
 <?php
 
-use CodeIgniter\Router\RouterCollection;
+use CodeIgniter\Router\RouteCollection;
 
 /**
- *  @var RouterCollection $routes
+ * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
 $routes->get('/about', 'page::about');
 $routes->get('/contact', 'page::contact');
 $routes->get('/faqs', 'page::faqs');
-$routes->getAutoRoute(true);
-$routes->get('/biodata', 'page::biodata');
+$routes->setAutoRoute(true);
